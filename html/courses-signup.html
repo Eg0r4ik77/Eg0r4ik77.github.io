@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/signup-style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap');
+    </style>
+    <title>Sign up</title>
+</head>
+<body>
+
+    <main>
+        <div class="authorization">
+            <div class = "authorization-form">
+                <h1 class = "authorization-title">Регистрация</h1>
+                <form method="post">
+                    <div class = "group">
+                        <label for="user" class="label">Логин</label>
+                        <input type="text" id="user" name="user-name" class="input" required placeholder="Noobmaster69" pattern="[A-Za-z0-9]">
+                    </div>
+                    <div class = "group">
+                        <label for="email" class="label">Email</label>
+                        <input type="email" id="email" name="user-email" class="input" required placeholder="noobmaster@mail.ru">
+                    </div>
+                    <div class = "group">
+                        <label for="telephone" class="label">Телефон</label>
+                        <input type="tel" id="telephone" name="user-telephone" class="input" placeholder="+7 (985) 777-77-77">
+                    </div>
+                    <div class = "group">
+                        <label for="password" class="label">Пароль</label>
+                        <input type="password" id="password" name="user-password" class="input" required placeholder="password" min="6" max="20">
+                    </div>
+                    <div class="group">
+                        <label class="label">Пол</label>
+                        <input type="radio" name="user-gender" value="male" checked>Мужской
+                        <br>
+                        <input type="radio" name="user-gender" value="female">Женский
+                    </div>
+                    <div class="group">
+                        <label class="label">Ненужные чекбоксы</label>
+                        <input type="checkbox" name="something" value="something">Ненужный чекбокс 1
+                        <br>
+                        <input type="checkbox" name="something" value="something">Ненужный чекбокс 2
+                        <br>
+                        <input type="checkbox" name="something" value="something">Ненужный чекбокс 3
+                    </div>
+                    <div class = "group">
+                        <label for="file" class="label">Прикрепите файлик</label>
+                        <input type="file" id="file" name="user-file">
+                    </div>
+                    <div class = "group">
+                        <label for="date" class="label">Дата рождения</label>
+                        <input type="datetime-local" id="date" name="user-date">
+                    </div>
+                    <div class = "group">
+                        <label for="countries" class="label">Выберите страну:</label>
+
+                        <select name="countries" id="countries">
+                            <option value="Russia">Россия</option>
+                            <option value="Canada">Канада</option>
+                            <option value="China">Китай</option>
+                        </select>
+                    </div>
+                    <div class = "group">
+                        <input type="submit" class = "button" value="Зарегистрироваться">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>

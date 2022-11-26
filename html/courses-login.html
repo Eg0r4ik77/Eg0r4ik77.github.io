@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/login-style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap');
+    </style>
+    <script src="captcha.js" defer></script>
+    <title>Login</title>
+</head>
+<body>
+
+    <main>
+        <div class="authorization">
+            <div class = "authorization-form">
+                <h1 class = "authorization-title">Вход</h1>
+                <form method="post">
+                    <div class = "group">
+                        <label for="user" class="label">Логин или email</label>
+                        <input type="text" id="user" name="user-name" class="input">
+                    </div>
+                    <div class = "group">
+                        <label for="password" class="label">Пароль</label>
+                        <input type="password" id="password" name="user-password" class="input">
+                    </div>
+                    <div class = "group">
+                        <input type="submit" class = "button" value="Войти">
+                    </div>
+                </form>
+                <hr class="hr">
+            </div>
+        </div>
+
+        <!-- <div class="Task10">
+            <div class = "captcha-block">
+                <div class="captcha"></div>
+                <input id="captcha-input">
+                <input id="captcha-submit" type="submit" value="Проверить"><br>
+                <button class="result" disabled>Отправить</button>
+            </div>
+            <br>
+            <div class = "accumulator">
+                <div id="value">0</div>
+                <button onclick="addNumber(accumulator)">Добавить число</button>     
+            </div> -->
+
+        </div>
+    </main>
+    
+</body>
+</html>
