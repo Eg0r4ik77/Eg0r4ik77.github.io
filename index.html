@@ -19,15 +19,9 @@
         <div class = "logo">
            <img src="/images/favicon.png" width="100" height="100" alt="logo"> 
         </div>
-
-        <div class = "title">Онлайн-курсы по разработке компьютерных игр</div>
-
-        <div class = "menu">
-            <input id = "menu_toggle" type="checkbox">
-            <label class = "menu_btn" for="menu_toggle">
-                <span></span>
-            </label>
-
+        
+        <div class = "links">
+            <div class = "title">Онлайн-курсы по разработке компьютерных игр</div>
             <nav>
                 <ul class = "nav-list">
                     <li><a href = "/html/courses.html">Курсы</a></li>
@@ -36,21 +30,22 @@
                     <li><a href = "/html/gallery.html">Галерея</a></li>
                 </ul>
             </nav>
+
+            <label for="burger" class="burger"><img src="/images/burger.png" alt="Menu" width="64" height="64"></label>
+            <input type="checkbox" id="burger" class="burger" hidden>
+            <div class="burger-menu">
+                <a href="/html/courses.html" class="btn btn-lg btn-light">Курсы</a>
+                <a href="/html/courses-signup.html" class="btn btn-lg btn-light">Регистрация</a>
+                <a href="/html/courses-login.html" class="btn btn-lg btn-light">Вход</a>
+                <a href="/html/gallery.html" class="btn btn-lg btn-light">Галерея</a>
+            </div>
         </div>
     </header>
 
     <blockquote id="start_quote">Геймдизайн — это процесс принятия решений, а решения нужно принимать уверенно.</blockquote>
 
     <main>
-        <section>             
-            <aside>
-                <ul>
-                    <li>Большинство курсов будет бесплатными</li>
-                    <li>Вы создадите свои первые прототипы</li>
-                    <li>Возможна помощь с трудоустройством</li>
-                    <li>Не забудьте оставить отзыв</li>
-                </ul>
-            </aside>
+        <section class = "start-section">             
             <div class = "start-block">
                 <h2 style="text-align: center;">Содержание курсов</h2>
                 <ul type="disc">
@@ -60,8 +55,18 @@
                     <li>Подготовка к собеседованию</li>
                 </ul>
             </div>
+            <aside>
+                <ul>
+                    <li>Большинство курсов будут бесплатными</li>
+                    <li>Вы создадите свои первые прототипы</li>
+                    <li>Возможна помощь с трудоустройством</li>
+                    <li>Не забудьте оставить отзыв</li>
+                </ul>
+            </aside>
         </section>
         
+        <br><hr>
+
         <section>
             <p class = "info-block">
                 <strong>Unity</strong> – универсальный движок, на котором разрабатывают игры для миллионов пользователей
@@ -72,7 +77,7 @@
                   Storm, Call of Duty: Mobile.</p>
         </section>
 
-        <div id = "video">
+         <div id = "video">
             <div class="game-video">
                 <video autoplay loop muted>
                     <source src = "/videos/genshin.mp4" type="video/mp4"/>
@@ -125,78 +130,54 @@
             </div>
         </section>
 
-        <!-- <div class="cards">
-            <div class = "card">
-            <img src="/images/csharp.jpg">
-                <div class = "card__content">
-                    <h2>C#</h2>
-                    <p>Объектно-ориентрированный язык программирования от компании Microsoft.</p>
-                    <a href="" class="card__button">Подробнее</a>
+        <!-- <div class = "stats-wrapper">
+            <div class="stats-first">
+                <span>1000</span>
+                <div class = "text1">пользователей уже трудоустроились в 2022 году</div>
+            </div>
+            <div>
+                <div class = "stats-list">
+                    <div class = "stats-item">
+                        <span>90%</span>
+                        <div class = "text">находят работу после прохождения курсов</div>
+                    </div>
+                    <div class = "stats-item">
+                        <span>120000 рублей</span>
+                        <div class="text">средняя зарплата выпускников наших курсов</div>
+                    </div>
                 </div>
             </div>
-            <div class = "card">
-                <img src="/images/unity-card.png">
-                <div class = "card__content">
-                    <h2>Unity</h2>
-                    <p>Межплатформенная среда разработки компьютерных игр, разработанная американской компанией Unity Technologies.</p>
-                    <a href="" class="card__button">Подробнее</a>
-                </div>
-            </div>
-            <div class = "card">
-                <img src="/images/blender.jpg">
-                <div class = "card__content">
-                    <h2>Blender</h2>
-                    <p>Профессиональное свободное и открытое программное обеспечение для создания трёхмерной компьютерной графики.</p>
-                    <a href="" class="card__button">Подробнее</a>
-                </div>
-            </div> -->
-        </div>
-
-        <!-- <div class = "custom__buttons">
-            <div class="custom__button1">Pulse</div>
-            <div class="custom__button2">BUTTON</div>
-            <div class="custom__button3"><span>HOVER ME</span></div>
-            <div class="custom__button4"><a>Read More</a></div>
-
         </div> -->
-        
-        <!-- <div class="container">
-            <div class="container-in">
-                <a href="#" class="button"><img src="/images/bell-icon.png" width="50" height="50"></a>
-                <div class="num">3</div>
-            </div>
-    
-            <ul >
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Мои курсы</a></li>
-                <li><a href="#">Профиль</a></li>
-            </ul>
-        </div>
-    </main>
-    <hr> -->
-    
-    <footer>
-        <nav class="footer-nav-list">
-            <div class="icon icon-collapse-pinterest">
-                <img src="/icons/pinterest.png">
-            </div>
-        
-            <div class="icon icon-collapse-twitter">
-                <img src="/icons/twitter.png">
-            </div>
-        
-            <div class="icon icon-collapse-vk">
-                <img src="/icons/vkontakte.png">
-            </div>
-        
-            <div class="icon icon-collapse-yt">
-                <img src="/icons/youtube.png">
-            </div>
 
-            <div class="icon icon-collapse-devart">
-                <img src="/icons/deviantart.png">
-            </div>
-        </nav>
+    <footer>
+        <div class="about-us">
+            <h4>О нас</h4>
+            <p>Наша образовательная платформа одна из лучших по качеству обучения. Вся теория записана с топовыми экспертами рынка,
+                 а практика максимально приближена к реальным рабочим задачам. Ждем вас!</p>
+        </div>
+        <div class = "contacts">
+            <h4>Контакты</h4>
+            <div>Слесаренко Егор Вадимович</div>
+            <div>ИКБО-03-21</div><br>
+            <div>egor050503sl@gmail.com</div>
+            <div>+7(985)142-70-37</div>
+            <br>
+        </div>
+        <div class = "social-links">
+            <h4>Социальные сети</h4>
+            <div class="socials">
+            <button class="social">
+                <img src="/icons/vkontakte.png" alt="VK" width="30" height="30">
+            </button>
+            <button class="social">
+                <img src="/icons/youtube.png" alt="YouTube" width="30" height="30">
+            </button>
+            <button class="social">
+                <img src="/icons/twitter.png" alt="Twitter" width="30" height="30">
+            </button>
+        </div>
+
+        </div> 
     </footer>
 </body>
 </html>
