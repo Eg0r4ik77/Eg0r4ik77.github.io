@@ -1,4 +1,5 @@
 @import url(header.css);
+@import url(footer.css);
 
 body
 {
@@ -11,62 +12,6 @@ body
 {
     color: white;   
     font-family: 'Montserrat', sans-serif; 
-}
-
-header{
-    display: flex;
-    position: sticky;
-    top: 0;
-    background-color: #C6B9FF;
-    overflow: hidden;
-    border-radius: 10px;
-    z-index: 1;
-}
-
-.logo{
-    margin-left: 1vw;
-    height: 4vh;
-}
-
-.title{
-    font-size: 25px;
-    padding-top: 10px;
-    text-align: center;
-    color: white;
-}
-
-.links{
-    display: inline-flex;
-    margin: auto;
-    flex-direction: column;
-}
-
-.nav-list{
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-    float: bottom;
-    list-style: circle;
-}
-
-nav li{
-    display: list-item, inline;
-    list-style-position: inside;
-    font-size: 20px;
-    float: left;
-    list-style: none;
-}
-
-nav a{
-    text-decoration: none;
-}
-
-nav a:hover{
-    color: purple;
-}
-
-nav a:active{
-    color: red;
 }
 
 #start_quote 
@@ -196,7 +141,6 @@ transform: translateY(0);
     background-color: white;
     line-height: 23px;
     display: flex;
-    flex-wrap: wrap;    
     width: fit-content;
     padding: 1vw;
     margin:auto;
@@ -259,101 +203,6 @@ transform: translateY(0);
     font-weight: 600;
     line-height: 30px;
 }
-
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    height: fit-content;
-    background-color: #423189;
-    border-radius: 10px;
-}
-
-.about-us{
-    display:inline-flex;
-    flex-direction: column;
-    padding-left: 2vw;
-    width: 32vw;
-    text-align: justify;
-}
-
-.contacts{
-    display:inline-flex;
-    flex-direction: column;
-    line-height: 23px;
-}
-
-.social-links{
-    display: inline-flex;
-    flex-direction: column;
-    text-align: center;
-    padding-right: 2vw;
-}
-
-.socials{
-    display: inline-flex;
-    justify-content: space-between;
-    column-gap: 5vw;
-}
-
-.social {
-    border-radius: 50%;
-    border: 0;
-    height: 50px;
-    width: 50px;
-    background: mediumpurple;
-    position: relative;
-    overflow: hidden;
-}
-
-.social::before {
-    content: '';
-    z-index: 0;
-    background: #E0B0FF;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateY(-100%);
-    transition: transform .5s ease;
-}
-
-.social:hover::before {
-    transform: translateY(0);
-}
-
-.social img {
-    position: absolute;
-    top: 20%;
-    left: 20%;
-    z-index: 1;
-}
-
-
-@media screen and (max-width: 800px) {
-    footer{
-        flex-direction: column;
-        padding-left: 2vw;
-    }
-
-     .about-us{
-        width: 90%;
-    }
-    
-    .social-links{
-        display: inline-flex;
-        flex-direction: column;
-        text-align: left;
-        padding-bottom: 2vw;
-    }
-
-    .socials{
-        justify-content:flex-start;
-        column-gap: 5vw;
-    }
-}
-
 /*
 .card{
     overflow: hidden;

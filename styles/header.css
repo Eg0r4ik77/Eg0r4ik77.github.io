@@ -1,3 +1,59 @@
+header{
+    display: flex;
+    position: sticky;
+    top: 0;
+    background-color: #C6B9FF;
+    overflow: hidden;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.logo{
+    margin-left: 1vw;
+    height: 4vh;
+}
+
+.title{
+    font-size: 25px;
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+}
+
+.links{
+    display: inline-flex;
+    margin: auto;
+    flex-direction: column;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    float: bottom;
+    list-style: circle;
+}
+
+nav li{
+    display: list-item, inline;
+    list-style-position: inside;
+    font-size: 20px;
+    float: left;
+    list-style: none;
+}
+
+nav a{
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: purple;
+}
+
+nav a:active{
+    color: red;
+}
+
 header input{
     visibility: hidden;
 }

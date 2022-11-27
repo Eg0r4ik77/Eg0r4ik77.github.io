@@ -1,0 +1,100 @@
+@import url(header.css);
+@import url(footer.css);
+
+body
+{
+    background-color: #32325d;
+    margin: 0;
+    padding: 0;
+}
+
+*
+{
+    color: white;   
+    font-family: 'Montserrat', sans-serif; 
+}
+
+.courses-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 2vmin;
+}
+
+.course-card{
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    border-radius: 10px;
+    background-color: rgb(39, 41, 61);
+    padding: 1em;
+    min-width: 250px;
+}
+
+.course-card img{
+    border-radius: 10px;
+}
+
+.card-body{
+    height: fit-content;
+    overflow-wrap: break-word;
+}
+
+.card-footer{
+    background-color: rgb(89, 208, 47);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: inherit;
+    border-radius: inherit;
+}
+
+.card-footer a{
+    cursor: pointer;
+}
+
+.custom__button3 {
+    transition: all 0.5s;
+    position: relative;
+
+    height: fit-content;
+    width: fit-content;
+    padding: 1em;
+    cursor: pointer;
+}
+.custom__button3::before {
+    border-radius: 10px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(255,255,255, .1);
+    transition: all 0.3s;
+}
+.custom__button3:hover::before {
+    opacity: 0 ;
+    transform: scale(.5,.5);
+}
+.custom__button3::after {
+    border-radius: 10px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.3s;
+    border: 1px solid rgba(255,255,255,0.5);
+    transform: scale(1.2,1.2);
+}
+.custom__button3:hover::after {
+    opacity: 1;
+    transform: scale(1,1);
+}
