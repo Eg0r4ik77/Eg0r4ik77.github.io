@@ -1,14 +1,28 @@
+@import url(header.css);
+@import url(footer.css);
+
 body
 {
     background-color: #32325d;
+    margin: 0;
+    padding: 0;
+}
+
+*
+{
+    color: white;   
+    font-family: 'Montserrat', sans-serif; 
 }
 
 .authorization{
-    width: 525px;
-    height: 470px;
-    margin: 2% auto auto auto;
+    width: 40vw;
+    min-width: 300px;
+    height: fit-content;
+    margin: auto auto 10px auto;
     background: url("/images/authorization.jpg") no-repeat;
     border-radius: 10px;
+    padding-bottom: 1%;
+    background-color: #32325d;
 }
 
 .group{
@@ -34,11 +48,23 @@ body
     border: 0;
     display: block;
     background-color: rgb(255, 255, 255, 0.4);
-    width: 385px;
+    width: 80%;
     border-radius: 25px;
     line-height: 21px;
     padding: 15px 20px 15px 20px;
     border-color: white;
+}
+
+.input:hover{
+    background-color: #C6B9FF;
+}
+
+input::placeholder{
+    color: lightcyan;
+}
+
+input:focus{
+    background-color: #C6B9FF;
 }
 
 .button{
@@ -48,11 +74,10 @@ body
     padding: 15px 20px 15px 20px;
     font-size: 16px;
     font-weight: 400px;
-    width: 385px;
+    width: 90%;
     font-family: 'Montserrat', sans-serif;
     border-color: blue;
     cursor: pointer;
-    margin-left: 4%;
 }
 
 .authorization-title{
@@ -70,43 +95,4 @@ form{
     width: inherit;
     margin-left: 5%;
     margin-right: 5%;
-}
-
-.hr{
-    display: block;
-    font-size: 14px;
-    font-weight: 400;
-    height: 2px;
-    margin-top: 60px;
-}
-
-.Task10{
-    position: relative;
-    margin-top: 2%;
-}
-
-.captcha-block{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    justify-items: center;
-    width: fit-content;
-    height: fit-content;
-    color:white;
-    text-align: center;
-}
-
-.accumulator{
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    justify-items: center;
-    width: fit-content;
-    height: fit-content;
-    color:white;
-    text-align: center;
-}
-
-#captcha-input{
-    text-align: center;
 }

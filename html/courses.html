@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/courses.css">
     <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <script src="https://kit.fontawesome.com/7a9f4963f0.js" crossorigin="anonymous"></script>
     
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap');
     </style>
 
-    <title>Main</title>
+    <title>Courses</title>
 </head>
 
 <body>
@@ -42,11 +43,19 @@
         </div>
     </header>
 
+
+    <div class = "search-box">
+        <input class = "search-text" id="search-button" type="text" placeholder="Поиск">
+        <a class = "search-button" href="">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </a>
+    </div>
+
     <div class = "courses-container">
         <div class = "course-card">
             <img src = "/images/ijunior.png">
             <div class="card-body">
-                <h5>Введение</h5>
+                <h5>1</h5>
                 <p class  = "card-text">
                     Бесплатное обучение разработки игр. Начните с основ геймдизайна, продолжите программирование и движками и закончите маркетингом и монетизацией. 
                 </p>
@@ -60,9 +69,9 @@
         <div class = "course-card">
             <img src = "/images/ijunior.png">
             <div class="card-body">
-                <h5>Введение</h5>
+                <h5>2</h5>
                 <p class  = "card-text">
-                    Бесплатное обучение разработки игр. Начните с основ геймдизайна, продолжите программирование и движками и закончите маркетингом и монетизацией. 
+                    Введение в разработку на языке C#.
                 </p>
             </div>
             <div class = "card-footer">
@@ -74,9 +83,9 @@
         <div class = "course-card">
             <img src = "/images/ijunior.png">
             <div class="card-body">
-                <h5>Введение</h5>
+                <h5>3</h5>
                 <p class  = "card-text">
-                    Бесплатное обучение разработки игр. Начните с основ геймдизайна, продолжите программирование и движками и закончите маркетингом и монетизацией. 
+                    Курс посвятит вас в основы системы контроля версий Git, познакомит с GitHub и инструментами Visual Studio а также научит работать с этим всем по методологии Kanban.
                 </p>
             </div>
             <div class = "card-footer">
@@ -88,9 +97,9 @@
         <div class = "course-card">
             <img src = "/images/ijunior.png">
             <div class="card-body">
-                <h5>Введение</h5>
+                <h5>1</h5>
                 <p class  = "card-text">
-                    Бесплатное обучение разработки игр. Начните с основ геймдизайна, продолжите программирование и движками и закончите маркетингом и монетизацией. 
+                    Изучи Unity и C# на примере создания 9 игр-хитов, а в конце сделай свой уникальный проект, и мы приведём в него первую тысячу пользователей.
                 </p>
             </div>
             <div class = "card-footer">
@@ -102,9 +111,9 @@
         <div class = "course-card">
             <img src = "/images/ijunior.png">
             <div class="card-body">
-                <h5>Введение</h5>
+                <h5>2</h5>
                 <p class  = "card-text">
-                    Бесплатное обучение разработки игр. Начните с основ геймдизайна, продолжите программирование и движками и закончите маркетингом и монетизацией. 
+                    Создание PacMan шаг за шагом с полного нуля. В проекте используется TileMap и теория графов для поиска пути
                 </p>
             </div>
             <div class = "card-footer">
@@ -116,9 +125,51 @@
         <div class = "course-card">
             <img src = "/images/ijunior.png">
             <div class="card-body">
-                <h5>Введение</h5>
+                <h5>3</h5>
                 <p class  = "card-text">
-                    Бесплатное обучение разработки игр. Начните с основ геймдизайна, продолжите программирование и движками и закончите маркетингом и монетизацией. 
+                    В нём вы найдёте всё: основы редактора, скриптинг, создание крутых эффектов и конечно же монетизацию ваших игр.
+                </p>
+            </div>
+            <div class = "card-footer">
+                <span>Бесплатно</span>
+                <div class = "custom__button3">Открыть</div>
+            </div>
+        </div>
+
+        <div class = "course-card">
+            <img src = "/images/ijunior.png">
+            <div class="card-body">
+                <h5>1</h5>
+                <p class  = "card-text">
+                    Изучи Unity и C# на примере создания 9 игр-хитов, а в конце сделай свой уникальный проект, и мы приведём в него первую тысячу пользователей.
+                </p>
+            </div>
+            <div class = "card-footer">
+                <span>Бесплатно</span>
+                <div class = "custom__button3">Открыть</div>
+            </div>
+        </div>
+
+        <div class = "course-card">
+            <img src = "/images/ijunior.png">
+            <div class="card-body">
+                <h5>2</h5>
+                <p class  = "card-text">
+                    Создание PacMan шаг за шагом с полного нуля. В проекте используется TileMap и теория графов для поиска пути
+                </p>
+            </div>
+            <div class = "card-footer">
+                <span>Бесплатно</span>
+                <div class = "custom__button3">Открыть</div>
+            </div>
+        </div>
+
+        <div class = "course-card">
+            <img src = "/images/ijunior.png">
+            <div class="card-body">
+                <h5>3</h5>
+                <p class  = "card-text">
+                    В нём вы найдёте всё: основы редактора, скриптинг, создание крутых эффектов и конечно же монетизацию ваших игр.
                 </p>
             </div>
             <div class = "card-footer">
@@ -156,6 +207,7 @@
             </button>
         </div>
 
+        <script src="/js/courses.js"></script>
         </div> 
     </footer>
 </body>

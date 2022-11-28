@@ -14,12 +14,55 @@ body
     font-family: 'Montserrat', sans-serif; 
 }
 
+.search-box{
+    margin: 10px auto 5px auto;
+    background-color: #2f3640;
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    width: fit-content;
+}
+
+.search-button{
+    float: right;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #2f3640;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.search-button i{
+    color: #E0B0FF;
+}
+
+.search-text:not(:placeholder-shown),
+.search-text:focus,
+.search-box:hover > .search-text{
+    width: 240px;
+}
+
+.search-text{
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    transition: 0.4s;
+    width: 0px;
+    border-radius: 40px;
+    line-height: 40px;
+}
+
 .courses-container{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
-    margin: 2vmin;
+    margin: 2vw;
+    width: fit-content;
 }
 
 .course-card{
@@ -28,7 +71,7 @@ body
     width: 25vw;
     border-radius: 10px;
     background-color: rgb(39, 41, 61);
-    padding: 1em;
+    padding: 10px;
     min-width: 250px;
 }
 
@@ -37,9 +80,15 @@ body
 }
 
 .card-body{
-    height: fit-content;
+    min-height: 180px;
     overflow-wrap: break-word;
 }
+
+/* @media screen and (max-width: 800px) {
+    .card-body{
+        height: fit-content;
+    }
+} */
 
 .card-footer{
     background-color: rgb(89, 208, 47);
@@ -61,7 +110,7 @@ body
 
     height: fit-content;
     width: fit-content;
-    padding: 1em;
+    padding: 15px;
     cursor: pointer;
 }
 .custom__button3::before {
@@ -97,4 +146,13 @@ body
 .custom__button3:hover::after {
     opacity: 1;
     transform: scale(1,1);
+}
+
+.hide{
+    display: none;
+}
+
+mark{
+    background-color: #423189;
+    border-radius:2px;
 }

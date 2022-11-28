@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/login-style.css">
+    <link rel="stylesheet" href="/styles/signup-login-style.css">
     <link rel="icon" type="image/x-icon" href="/images/favicon.png">
     
     <style>
@@ -14,43 +14,84 @@
     <title>Login</title>
 </head>
 <body>
+    <header>
+        <div class = "logo">
+           <img src="/images/favicon.png" width="100" height="100" alt="logo"> 
+        </div>
+        
+        <div class = "links">
+            <div class = "title">Онлайн-курсы по разработке компьютерных игр</div>
+            <nav>
+                <ul class = "nav-list">
+                    <li><a href = "/html/courses.html">Курсы</a></li>
+                    <li><a href = "/html/courses-signup.html">Регистрация</a></li>
+                    <li><a href = "/html/courses-login.html">Вход</a></li>
+                    <li><a href = "/html/gallery.html">Галерея</a></li>
+                </ul>
+            </nav>
+
+            <label for="burger" class="burger"><img src="/images/burger.png" alt="Menu" width="64" height="64"></label>
+            <input type="checkbox" id="burger" class="burger" hidden>
+            <div class="burger-menu">
+                <a href="/html/courses.html" class="btn btn-lg btn-light">Курсы</a>
+                <a href="/html/courses-signup.html" class="btn btn-lg btn-light">Регистрация</a>
+                <a href="/html/courses-login.html" class="btn btn-lg btn-light">Вход</a>
+                <a href="/html/gallery.html" class="btn btn-lg btn-light">Галерея</a>
+            </div>
+        </div>
+    </header>
 
     <main>
         <div class="authorization">
             <div class = "authorization-form">
-                <h1 class = "authorization-title">Вход</h1>
+                <h1 class = "authorization-title">Регистрация</h1>
                 <form method="post">
                     <div class = "group">
-                        <label for="user" class="label">Логин или email</label>
-                        <input type="text" id="user" name="user-name" class="input">
+                        <label for="email" class="label">Email</label>
+                        <input type="email" id="email" name="user-email" class="input" required placeholder="noobmaster@mail.ru">
                     </div>
                     <div class = "group">
                         <label for="password" class="label">Пароль</label>
-                        <input type="password" id="password" name="user-password" class="input">
+                        <input type="password" id="password" name="user-password" class="input" required placeholder="password" min="6" max="20">
                     </div>
                     <div class = "group">
-                        <input type="submit" class = "button" value="Войти">
+                        <input type="submit" class = "button" value="Зарегистрироваться">
                     </div>
                 </form>
-                <hr class="hr">
             </div>
-        </div>
-
-        <!-- <div class="Task10">
-            <div class = "captcha-block">
-                <div class="captcha"></div>
-                <input id="captcha-input">
-                <input id="captcha-submit" type="submit" value="Проверить"><br>
-                <button class="result" disabled>Отправить</button>
-            </div>
-            <br>
-            <div class = "accumulator">
-                <div id="value">0</div>
-                <button onclick="addNumber(accumulator)">Добавить число</button>     
-            </div> -->
-
         </div>
     </main>
     
+    <footer>
+        <div class="about-us">
+            <h4>О нас</h4>
+            <p>Наша образовательная платформа одна из лучших по качеству обучения. Вся теория записана с топовыми экспертами рынка,
+                 а практика максимально приближена к реальным рабочим задачам. Ждем вас!</p>
+        </div>
+        <div class = "contacts">
+            <h4>Контакты</h4>
+            <div>Слесаренко Егор Вадимович</div>
+            <div>ИКБО-03-21</div><br>
+            <div>egor050503sl@gmail.com</div>
+            <div>+7(985)142-70-37</div>
+            <br>
+        </div>
+        <div class = "social-links">
+            <h4>Социальные сети</h4>
+            <div class="socials">
+            <button class="social">
+                <img src="/icons/vkontakte.png" alt="VK" width="30" height="30">
+            </button>
+            <button class="social">
+                <img src="/icons/youtube.png" alt="YouTube" width="30" height="30">
+            </button>
+            <button class="social">
+                <img src="/icons/twitter.png" alt="Twitter" width="30" height="30">
+            </button>
+        </div>
+
+        <script src="/js/courses.js"></script>
+        </div> 
+    </footer>
 </body>
 </html>
