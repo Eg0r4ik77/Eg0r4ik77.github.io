@@ -91,7 +91,7 @@ header input{
     color:purple;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 550px) {
     .burger {
         display: inline;
     }
