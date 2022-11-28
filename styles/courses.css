@@ -41,7 +41,7 @@ body
 
 .search-text:not(:placeholder-shown),
 .search-text:focus,
-.search-box:hover > .search-text{
+.search-box:hover > .search-text{ 
     width: 240px;
 }
 
