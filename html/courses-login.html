@@ -44,8 +44,8 @@
     <main>
         <div class="authorization">
             <div class = "authorization-form">
-                <h1 class = "authorization-title">Регистрация</h1>
-                <form method="post">
+                <h1 class = "authorization-title">Вход</h1>
+                <form method="post" onsubmit="alert('Вы успешно вошли');return false;">
                     <div class = "group">
                         <label for="email" class="label">Email</label>
                         <input type="email" id="email" name="user-email" class="input" required placeholder="noobmaster@mail.ru">
@@ -55,7 +55,7 @@
                         <input type="password" id="password" name="user-password" class="input" required placeholder="password" min="6" max="20">
                     </div>
                     <div class = "group">
-                        <input type="submit" class = "button" value="Зарегистрироваться">
+                        <button type="submit" class="custom__button2">Войти</button>
                     </div>
                 </form>
             </div>
@@ -91,7 +91,6 @@
         </div>
 
         <script src="/js/courses.js"></script>
-        </div> 
     </footer>
 </body>
 </html>

@@ -44,10 +44,11 @@
         <div class="authorization">
             <div class = "authorization-form">
                 <h1 class = "authorization-title">Регистрация</h1>
-                <form method="post">
+                <form method="post" onsubmit="alert('Вы успешно зарегистрировались');return false;">
                     <div class = "group">
                         <label for="user" class="label">Логин</label>
-                        <input type="text" id="user" name="user-name" class="input" required placeholder="Noobmaster68" pattern="[A-Za-z0-9]">
+                        <input type="text" id="user" name="user-name" class="input" required placeholder="Noobmaster68" pattern="^[a-zA-Z](.[a-zA-Z0-9_-]*)$">
+                        <!-- Логин может состоять из латинских букв и цифр и двух символов "_" и "-", причем начинаться может только с латинских букв -->
                     </div>
                     <div class = "group">
                         <label for="email" class="label">Email</label>
@@ -55,18 +56,13 @@
                     </div>
                     <div class = "group">
                         <label for="telephone" class="label">Телефон</label>
-                        <input type="tel" id="telephone" name="user-telephone" class="input" placeholder="+7 (985) 777-77-77">
+                        <input type="tel" id="telephone" name="user-telephone" class="input" placeholder="+79857777777" pattern="^((\+7|7|8)+([0-9]){10})$">
                     </div>
                     <div class = "group">
                         <label for="password" class="label">Пароль</label>
                         <input type="password" id="password" name="user-password" class="input" required placeholder="password" min="6" max="20">
                     </div>
-                    <div class="group">
-                        <input type="checkbox" name="something" value="something">Ненужный чекбокс 1
-                    </div>
-                    <div class = "group">
-                        <input type="submit" class = "button" value="Зарегистрироваться">
-                    </div>
+                    <button type="submit" class="custom__button2">Зарегистрироваться</button>
                 </form>
             </div>
         </div>

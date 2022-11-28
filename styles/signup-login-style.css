@@ -26,15 +26,17 @@ body
 }
 
 .group{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     font-size: 16px;
     font-weight: 400px;
     font-family: 'Montserrat', sans-serif;
     line-height: 21px;
     color: #edf3ff;
     text-align: left;
-    margin-bottom: 15px;
-    margin-left: 5%;
+    margin: 15px auto 15px auto;
+    width: 70%;
 }
 
 .label{
@@ -45,10 +47,10 @@ body
 }
 
 .input{
+    outline-color: #423189;
     border: 0;
     display: block;
     background-color: rgb(255, 255, 255, 0.4);
-    width: 80%;
     border-radius: 25px;
     line-height: 21px;
     padding: 15px 20px 15px 20px;
@@ -67,19 +69,6 @@ input:focus{
     background-color: #C6B9FF;
 }
 
-.button{
-    background-color: blue;
-    border-radius: 25px;
-    color: white;
-    padding: 15px 20px 15px 20px;
-    font-size: 16px;
-    font-weight: 400px;
-    width: 90%;
-    font-family: 'Montserrat', sans-serif;
-    border-color: blue;
-    cursor: pointer;
-}
-
 .authorization-title{
     text-transform: uppercase;
     font-size: 20px;
@@ -92,7 +81,41 @@ input:focus{
 }
 
 form{
-    width: inherit;
-    margin-left: 5%;
-    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom__button2 {
+    letter-spacing: 1px;
+    position:relative;
+    overflow:hidden;
+    border: none;
+    background-color: #C6B9FF;
+    border-radius: 25px;
+    font-size: 1em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 15px 20px 15px 20px;
+    width: fit-content;
+    margin: 20px auto 0 auto;
+    cursor: pointer;
+}
+
+.custom__button2:before {
+    content: "";
+    position: absolute;
+    height: 150px;
+    width: 50px;
+    background : #fff;
+    left: -55px;
+    top: -40px;
+    transform: rotate(37deg);
+    transition: all .3s;
+    opacity: .3;
+}
+
+.custom__button2:hover:before {
+    left:95%;
 }

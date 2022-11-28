@@ -162,13 +162,6 @@ transform: translateY(0);
     }
 }
 
-/* .stats-wrapper .text,
-.stats-wrapper .text1,
-.stats-wrapper .stats-item,
-.stats-wrapper span{
-     color: black;
-} */
-
 .stats-list{
     display: inline-flex;
     flex-direction: column;
