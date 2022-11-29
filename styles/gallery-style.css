@@ -1,5 +1,6 @@
 @import url(header.css);
 @import url(footer.css);
+@import url(style.css);
 
 *
 {
@@ -91,4 +92,44 @@
   display: flex;
   color:black;
   height: fit-content;
+}
+
+.internship-structure{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  background-color: white;
+}
+
+.title1{
+  color: black;
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.5em;
+  text-transform: uppercase;
+}
+
+.title2{
+  color:black;
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 1.3em;
+  height: fit-content;
+}
+
+.number,
+.skill-item h3,
+.skill-item p{
+  color:black;
+}
+
+.skill-item:hover{
+  background: none;
+}
+
+.number{
+  border-radius: 50%;
+  /* border: 2px solid #666; */
 }
