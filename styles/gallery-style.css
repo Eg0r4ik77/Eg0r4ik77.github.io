@@ -1,7 +1,5 @@
-body
-{
-    background-color: #32325d;
-}
+@import url(header.css);
+@import url(footer.css);
 
 *
 {
@@ -9,255 +7,88 @@ body
     font-family: 'Montserrat', sans-serif; 
 }
 
-
-.container
-{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 40px 0;
+.first-block{
+  box-sizing: content-box;
+  display: block;
 }
 
-.container img {
-    display: block;
-    margin: 10%;
-    height: auto;
-    width: 175px;
-}
-
-.container .box
-{
+.first-block-image{
+  background-color: black;
+  background-image: url(/images/razrabotchik-igr.jpg);
+  height: 500px;
   position: relative;
-  flex-direction: row;
-  width: 320px;
-  height: 400px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 50px 40px;
-  transition: 0.5s;
+  vertical-align: middle;
+  text-align: center;
+  background-size: cover;
 }
 
-.container .box::before
-{
-    content:' ';
-    position: absolute;
-    top: -12px;
-    left: 50px;
-    width: 70%;
-    height: 110%;
-    text-decoration: none;
-    background: #fff;
-    border-radius: 8px;
-    transition: 0.5s;
-    transform: skewX(-15deg);
-  }
-
-.container .box::after
-{
-  content:'';
-  position: absolute;
-  top: 0;
-  left: 50px;
-  width: 50%;
-  height: 100%;
-  background: #fff;
-  border-radius: 8px;
-  transition: 0.5s;
-  filter: blur(30px);
+/* .first-block-image::before{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 500px;
+	background-color:rgba(0, 0, 0, .7);
 }
 
-.container .box:hover:before,
-.container .box:hover:after
-{
-  height: 90%;
-  margin-left: 25%;
-  top: 7%;
-  left: -10%;
-  transition: 0.5s;
-  transform: skewX(0);
-}
+.first-block-wrapper{
+  width: 100px;
+  height: 100px;
+  background-color: white;
+} */
 
-.container .course:before,
-.container .course:after
-{
-  background: linear-gradient(315deg, #4749b7, #8596b9)
-}
-
-
-.container .box .content
-{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  height: 65%;
-  padding: 20px 40px;
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  z-index: 1;
-  transform: 1s;
-  color: #fff;
-}
-
-.container .box:hover .content
-{
-    transition: 400ms;
-    height: 70%;
-    transform: skewX(45deg) translateX(calc(var(--width) + 50%));
-}
-
-.container .box .container:hover {
-    backdrop-filter: blur(5px);
-    z-index: 3;
-}
-
-.container .box .content h2
-{
-    width: fit-content;
-    height: fit-content;
-    align-self: center;
-    font-size: 2em;
-    color: #fff;
-    margin-bottom: 10px;
-}
-
-.container .box .content p
-{
-  font-size: 1.1em;
-  margin-bottom: 10px;
-  line-height: 1.4em;
-}
-
-.container .box .content a
-{
-  width: fit-content;
+.goals-container{
   height: fit-content;
-  align-self: center;
-  font-size: 1.1em;
-  color: #111;
-  background: #fff;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 10px;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: 700;
-  margin-top: 5px;
-  bottom: 5%;
-  position: absolute;
-}
-
-.container .box .content span
-{
   width: fit-content;
-  height: fit-content;
-  align-self: center;
-  margin: 10px;
-
+  margin: 10px auto;
 }
 
-.container .box .content a:hover
-{
-  background: linear-gradient(45deg, rgba(134, 131, 218, 0.441),rgba(108, 155, 226, 0.5));
-  border: 1px solid rgba(129, 112, 236, 0.4);
-  box-shadow: 0 10px 15px rgba(1, 1, 1, 0.2);
-  color: #ffff;
-}
-
-.container2
-{
+.goals-wrapper{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  padding: 40px 0;
+  gap: 2%;
+  width: 70vw;
   height: fit-content;
 }
 
-.box2{
-  position: relative;
-  width: 320px;
-  height: 320px;
+.goals-image{
   display: flex;
-  background: linear-gradient(315deg, #4749b7, #8596b9);
-  border-radius: 10px;
-  margin: 50px 40px;
-  transition: 0.5s;
-}
-
-.box2 .content{
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
 
-.box2 h2{
-  display: flex;
-  height: fit-content;
-  position: relative;
-  text-align: center;
-}
-
-.box2 span{
-  display: flex;
-  position: relative;
-  text-align: center;
-}
-
-.box2 .content{
+.goals-image img{
+  border-radius: 20px;
   width: 100%;
-  transition: .5s;
-}
-
-.box2 .content a
-{
-  width: fit-content;
   height: fit-content;
-  align-self: center;
-  font-size: 1.1em;
-  color: #111;
-  background: #fff;
-  padding: 10px;
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: 700;
-  position: absolute;
-  bottom: 5%;
 }
 
-.container2 .box2 .content a:hover
-{
-  background: linear-gradient(45deg, rgba(134, 131, 218, 0.441),rgba(108, 155, 226, 0.5));
-  border: 1px solid rgba(129, 112, 236, 0.4);
-  box-shadow: 0 10px 15px rgba(1, 1, 1, 0.2);
-  color: #ffff;
+.goals-text{
+  width: 100%;
+  justify-content: center;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+  height: fit-content;
 }
 
-.container2:hover .content{
-    filter: blur(4px);
+.goals-title{
+  color:black;
+  text-align: center;
+  font-weight: 600;
+  font-size: 2em;
+  text-transform: uppercase;
 }
 
-.container2 .content:hover{
-  filter:blur(0);
+.goals-p{
+  display: flex;
+  color:black;
+  height: fit-content;
 }
-
-.container2 .box2:hover{
-  transform: scale(1.1, 1.1);
-}
-
-#like{
-  position: relative;
-  height: 50px;
-  width: 50px;
-  color: black;
-  padding: 1em;
-  margin-left: 50%;
-}
-
-.active { 
-  background-color: red;
-  border-color: white;
- }
