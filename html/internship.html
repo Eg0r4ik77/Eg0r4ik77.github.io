@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/gallery-style.css">
+    <link rel="stylesheet" href="/styles/internship-style.css">
     <link rel="icon" type="image/x-icon" href="/images/favicon.png">
     
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap');
     </style>
  
-    <title>Gallery</title>
+    <title>Internship</title>
 </head>
 
 <body>
     <header>
         <div class = "logo">
-            <a href="index.html"><img src="/images/favicon.png" width="100" height="100" alt="logo"></a>
+            <a href="/index.html"><img src="/images/favicon.png" width="100" height="100" alt="logo"></a>
         </div>
         
         <div class = "links">
@@ -27,25 +27,46 @@
                     <li><a href = "/html/courses.html">Курсы</a></li>
                     <li><a href = "/html/courses-signup.html">Регистрация</a></li>
                     <li><a href = "/html/courses-login.html">Вход</a></li>
-                    <li><a href = "/html/gallery.html">Галерея</a></li>
+                    <li><a href = "/html/internship.html">Стажировка</a></li>
                 </ul>
             </nav>
 
-            <label for="burger" class="burger"><img src="/images/burger.png" alt="Menu" width="64" height="64"></label>
-            <input type="checkbox" id="burger" class="burger" hidden>
-            <div class="burger-menu">
-                <a href="/html/courses.html" class="btn btn-lg btn-light">Курсы</a>
-                <a href="/html/courses-signup.html" class="btn btn-lg btn-light">Регистрация</a>
-                <a href="/html/courses-login.html" class="btn btn-lg btn-light">Вход</a>
-                <a href="/html/gallery.html" class="btn btn-lg btn-light">Галерея</a>
+            <div class="burger-wrapper">
+                <label for="check-menu" class="burger-label"><img src = "/images/burger.png"></label>
+                <input type="checkbox" id="check-menu">
+                <nav class="main-burger-menu">
+                    <a href="/html/courses.html">Курсы</a>
+                    <a href="/html/courses-signup.html">Регистрация</a>
+                    <a href="/html/courses-login.html">Вход</a>
+                    <a href="/html/internship.html">Стажировка</a>
+                </nav>
             </div>
         </div>
     </header>
     <main>
-        <!-- <div class = "first-block">
-            <div class = "first-block-image"></div>
-            <div class = "first-block-wrapper"></div>
-        </div> -->
+        <div class = "first-block">
+            <img src="/images/razrabotchik-igr.jpg" class = "first-block-image"/>
+                <div class = "first-block-wrapper">
+                    <div class="first-block-left">
+                        <h1>Стажировка</h1>
+                        <h3>Изучайте на практике C#, Unity, ASPNet и профессиональные инструменты.</h3>
+                    </div>
+                    <div class="first-block-right">
+                        <div class="first-block-right-item">
+                            <img src="/icons/salary.png">
+                            <h4>Платим за задачи</h4>
+                        </div>
+                        <div class="first-block-right-item">
+                            <img src="/icons/help.png">
+                            <h4>Помощь в работе</h4>
+                        </div>
+                        <div class="first-block-right-item">
+                            <img src="/icons/videoconference.png">
+                            <h4>Online</h4>
+                        </div>
+                    </div>
+            </div>
+        </div>
         
         <div class = "goals-container">
             <div class="goals-wrapper">
@@ -100,6 +121,30 @@
                 </ol>
             </div>
         </div>
+
+        <div class="required-certificates-wrapper">
+            <div class="title1">Необходимые сертификаты.</div>
+            <div class="title2">Для участия в программе стажировки вам необходимо получить один из сертификатов стажера в нашей платформе.</div>
+       
+            <div class="cards">
+                <div class = "card">
+                <img src="/images/unity-card.png">
+                    <div class = "card__content">
+                        <h2>Unity Стажер</h2>
+                        <p>Объектно-ориентрированный язык программирования от компании Microsoft.</p>
+                        <a href="#" class="card__button">Подробнее</a>
+                    </div>
+                </div>
+                <div class = "card">
+                    <img src="/images/asp1.jpg">
+                    <div class = "card__content">
+                        <h2>ASP .NET Core стажер</h2>
+                        <p>Межплатформенная среда разработки компьютерных игр, разработанная американской компанией Unity Technologies.</p>
+                        <a href="#" class="card__button">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="about-us">
@@ -127,8 +172,6 @@
             <button class="social">
                 <img src="/icons/twitter.png" alt="Twitter" width="30" height="30">
             </button>
-        </div>
-
         </div> 
     </footer>
 </body>

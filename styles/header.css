@@ -3,9 +3,10 @@ header{
     position: sticky;
     top: 0;
     background-color: #C6B9FF;
-    overflow: hidden;
-    border-radius: 10px;
     z-index: 1;
+    min-height: 100px;
+    height: fit-content;
+    overflow: hidden;
 }
 
 .logo{
@@ -58,58 +59,72 @@ header input{
     visibility: hidden;
 }
 
-.burger {
-    display: none;
+header{
+    overflow: visible;
+  }
+  
+  .burger-wrapper{
     position: absolute;
-    top: 5vh;
-    right: 3vw;
-    z-index: 2;
-}
-
-.burger img {
-    height: 5vh;
-    max-height: 100px;
-    object-fit: scale-down;
-}
-
-.burger-menu {
-    display: flex;
+    top: 0;
+    right: 0;
+    width: fit-content;
     flex-direction: column;
-    position: absolute;
-    top: 1vh;
-    left: 45vw;
-    flex-wrap: wrap;
-    opacity: 0;
-    line-height: 23px;
-}
-
-.burger-menu a{
+    color: white;
+    text-align: center;
+    height: 30px;
+    display: none;
+  }
+  
+  .burger-label{
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  #check-menu{
+    display: none;
+  }
+  
+  .burger-wrapper img{
+    width: 40px;
+    height: 40px;
+    background-color:mediumpurple;
+    transition: .5s all;
+  }
+  
+  .main-burger-menu{
+    display: block; 
+    width: fit-content;
+    max-height: 0;
+    font-size: 0;
+    overflow: hidden;
+    transition: .5s all;
+    transform: translateY(60px);
+  }
+  
+  .main-burger-menu a{
+    display: block;
+    padding: 5px;
+    color: white;
     text-decoration: none;
-}
-
-.burger-menu a:hover{
-    color:purple;
-}
-
-@media screen and (max-width: 550px) {
-    .burger {
+    background-color: #423189;
+    width: 100vw;
+  }
+  
+  #check-menu:checked ~ .main-burger-menu{
+    max-height: 500px;
+    font-size: 16px;
+  }
+  
+  @media screen and (max-width: 550px) {
+    .burger-wrapper {
         display: inline;
     }
-    .burger-menu {
-        width: 100%;
-        display: flex;
-    }
-
-    .burger:checked ~ .burger-menu {
-        right: 0;
-        opacity: 1;
-    }
-
-    header nav {
+  
+    header .nav-list {
         display: none;
     }
-
+  
     header .title{
-        visibility: hidden;
+        display: none;
     }
-}
+  }
