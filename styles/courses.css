@@ -63,7 +63,7 @@ body
     flex-wrap: wrap;
     justify-content: center;
     gap: 25px;
-    margin: 2vw;
+    margin: 2vh auto 2vh auto;
     width: 90vw;
 }
 
