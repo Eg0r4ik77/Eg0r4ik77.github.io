@@ -64,7 +64,7 @@ body
     justify-content: center;
     gap: 25px;
     margin: 2vw;
-    width: fit-content;
+    width: 90vw;
 }
 
 .course-card{
