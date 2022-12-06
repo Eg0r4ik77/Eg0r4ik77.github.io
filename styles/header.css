@@ -19,6 +19,7 @@ header{
     padding-top: 10px;
     text-align: center;
     color: white;
+    /* background-color: red; */
 }
 
 .links{
@@ -125,5 +126,12 @@ header{
   
     header .nav-list {
         display: none;
+    }
+
+    header .title{
+      position:absolute;
+      left: 0;
+      top: 30%;
+      width: 100vw;
     }
   }
